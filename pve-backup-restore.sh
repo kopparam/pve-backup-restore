@@ -101,6 +101,10 @@ restore() {
             # Extract the specific file from the archive
             log "Restoring file $target_path"
             tar -xzf "$backup_file" -C / "$archived_file"
+        else
+            # Extract the specific file from the archive
+            log "Restoring file $target_path"
+            tar -xzf "$backup_file" -C / "$archived_file"
         fi
     done
 
